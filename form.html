@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Form with Validation</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="registrationForm" novalidate>
+    <label for="fullName"><b>Full Name</b>:</label>
+    <input type="text" id="fullName" required>
+    <br>
+
+    <label for="email"><b>Email</b>:</label>
+    <input type="email" id="email" required>
+    <br>
+
+    <label for="password"><b>Password:</b></label>
+    <input type="password" id="password" required>
+    <br>
+
+    <label><b>Gender:</b></label>
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female
+    <br><br>
+
+    <label for="degeree"><b>Degeree:</b></label>
+    <select id="degeree" required>
+      <option value="" disabled selected>Select a degeree</option>
+      <option value="be">BE</option>
+      <option value="bsc">BSc</option>
+      <option value="b.tech">B.Tech</option>
+      
+    </select>
+    <label for="semester"><b>Semester:</b></label>
+    <input type="number" id="number" required>
+    <br><br>
+    
+    <label><b>Select your course </b>:</label>
+    <input type="checkbox" name="Select your course" value="Web Development Course" required> Web Development Course <br>
+    <input type="checkbox" name="Select your course" value="Programming with Python Course" required> Programming with Python Course <br>
+    <input type="checkbox" name="Select your course" value="Programming with C and C++ Course" required> Programming with C and C++ Course  <br>
+    <br>
+
+    <label for="country"><b>Country:</b></label>
+    <select id="country" required>
+      <option value="" disabled selected>Select a country</option>
+      <option value="india">INDIA</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
